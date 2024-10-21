@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>{{ title }}</title>
+	<link rel = "shortcut icon" href = "{{ url_for('static', filename = 'images/agronomy.png') }}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&display=swap" rel="stylesheet">
+	<!-- for-mobile-apps -->
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	<meta charset = "utf-8">
+	<meta name = "keywords" content = "Agro Harvest Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<style>
+		html {
+			font-size: 1rem;
+		}
+
+		@media (min-width: 576px) {
+			html {
+				font-size: 1.25rem;
+			}
+		}
+
+		@media (min-width: 768px) {
+			html {
+				font-size: 1.5rem;
+			}
+		}
+
+		@media (min-width: 992px) {
+			html {
+				font-size: 1.75rem;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			html {
+				font-size: 2rem;
+			}
+
+			html {
+				font-size: 1rem;
+			}
+
+			h1 {
+				font-size: 1.2rem;
+			}
+
+			h2 {
+				font-size: 1.1rem;
+			}
+
+			@media (min-width: 768px) {
+				html {
+					font-size: 1.1rem;
+				}
+
+				h1 {
+					font-size: 1.3rem;
+				}
+
+				h2 {
+					font-size: 1.2rem;
+				}
+			}
+
+			@media (min-width: 991px) {
+				html {
+					font-size: 1.2rem;
+				}
+
+				h1 {
+					font-size: 1.5rem;
+				}
+
+				h2 {
+					font-size: 1.4rem;
+				}
+			}
+
+			@media (min-width: 1200px) {
+				html {
+					font-size: 1.2rem;
+				}
+
+				h1 {
+					font-size: 1.7rem;
+				}
+
+				h2 {
+					font-size: 1.6rem;
+				}
+			}
+
+		}
+	</style>
+	<script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin = "anonymous"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity = "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin = "anonymous"></script>
+	<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity = "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin = "anonymous"></script>
+	<script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity = "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin = "anonymous"></script>
+	<script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity = "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin = "anonymous"></script>
+	<!-- css files -->
+	<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity = "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin = "anonymous">
+	<link href = "{{ url_for('static', filename = 'css/bootstrap.css') }}" rel = 'stylesheet' type = 'text/css' />
+	<!-- bootstrap css -->
+	<link href = "{{ url_for('static', filename = 'css/style.css') }}" rel = 'stylesheet' type = 'text/css' />
+	<!-- custom css -->
+	<link href = "{{ url_for('static', filename = 'css/font-awesome.min.css') }}" rel = "stylesheet">
+	<!-- fontawesome css -->
+	<script type = "text/JavaScript" src = "{{ url_for('static', filename = 'scripts/cities.js') }}"></script>
+	<!-- google fonts -->
+	<link href = "//fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i&amp;subset=latin-ext,thai,vietnamese"
+		rel = "stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+	<!-- //google fonts -->
+	<style>
+		#google_translate_element select {
+			background: #f6edfd;
+			font-family: Thasadith, sans-serif;
+			font-size: 15px;
+			border: none;
+			border-radius: 3px;
+			padding: 2px 8px;
+			margin-top: 8px;
+		}
+		.goog-logo-link {
+		   	display: none;
+		}
+		div.goog-te-gadget {
+			color: transparent;
+		}
+		.goog-te-banner-frame.skiptranslate {
+			display: none;
+		}
+		.goog-te-banner-frame {
+			font-family: Thasadith, sans-serif;
+			font-size: 20px;
+		}
+		#goog-gt-tt, .goog-te-balloon-frame {
+			display: none;
+		}
+        .header {
+			position: fixed;
+			width: 100%;
+			top: 0;
+          	padding: 10px 16px;
+          	background-image: linear-gradient(45deg,black,#02360e);
+          	color: #f1f1f1;
+          	z-index: 2;
+        }
+        .modal {
+        	display: none;
+        	position: fixed;
+        	z-index: 1;
+        	padding-top: 100px;
+        	left: 0;
+        	top: 0;
+        	width: 100%;
+			height: 95%;
+        	background-color: rgb(0,0,0);
+	        background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+        	background-color: #fefefe;
+        	margin: auto;
+        	padding: 20px;
+	        border: 1px solid #888;
+        	width: 80%;
+        }
+        .close {
+        	color: #aaaaaa;
+        	float: right;
+        	font-size: 28px;
+        	font-weight: bold;
+        }
+        .close:hover, .close:focus {
+        	color: #000;
+        	text-decoration: none;
+        	cursor: pointer;
+        }
+		button:hover, button:focus {
+			outline: none;
+		}
+        .iframe-container {
+          	position: relative;
+          	width: 100%;
+          	padding-bottom: 56.25%;
+        }
+        .iframe-container iframe {
+          	position: absolute;
+          	top:0;
+          	left: 0;
+          	width: 100%;
+        }
+	</style>
+</head>
+<body >  
+	<!-- Navigation -->
+	<div class = "nav-wrapper">
+		<nav class = "navbar navbar-expand-lg navbar-dark bg-dark static-top header" style = "background-color: #1C00ff00;">
+			<div class = "container">
+				<a class = "navbar-brand" href = "{{ url_for('home') }}">
+					<img src = "{{ url_for('static', filename = 'images/agronomy.png') }}" style = "width: 50px; height: 50px; opacity: 0.7;" alt = "">
+				</a>
+				<p style="font-family: 'Exo 2', sans-serif; font-size:20px">AGRONOMY</p>
+				<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive"
+					aria-controls = "navbarResponsive" aria-expanded = "false" aria-label = "Toggle navigation">
+					<span class = "navbar-toggler-icon"></span>
+				</button>
+				<div class = "collapse navbar-collapse" id = "navbarResponsive">
+					<ul class = "navbar-nav ml-auto">
+						<li class = "nav-item active">
+							<h5><a class = "nav-link text-center" href = "{{ url_for('home') }}">Home</a></h5>
+						</li>
+						<li class = "nav-item">
+							<h5><a class = "nav-link text-center" style = "cursor: pointer;" id = "myBtn">Video</a></h5>
+						</li>
+						<li class = "nav-item">
+							<h5><a class = "nav-link text-center" href = "{{ url_for('crop_recommend') }}">Crop</a></h5>
+						</li>
+						<li class = "nav-item">
+							<h5><a class = "nav-link text-center" href = "{{ url_for('fertilizer_recommendation') }}">Fertilizer</a></h5>
+						</li>
+						<li class = "nav-item">
+							<h5><a class = "nav-link text-center" href = "{{ url_for('disease_prediction') }}">Disease</a></h5>
+						</li>
+						<li id="google_translate_element" class="nav-item"></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement(
+				{pageLanguage: 'en'},
+				'google_translate_element'
+			);
+		}
+	</script>
+	<script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+		cb=googleTranslateElementInit">
+	</script>
+	<div class="row">
+			<div id="myModal" class="modal">
+					<div class="modal-content row-xs-2 row-lg-12">
+						<span class="close">×</span>
+						<div class="iframe-container">
+							<iframe id = "yt" width="560" height="75%" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							</iframe>
+					</div>
+				</div>
+			</div>
+	</div>
+    <script>
+		var modal = document.getElementById('myModal');
+    	var btn = document.getElementById("myBtn");
+    	var span = document.getElementsByClassName("close")[0];
+    	var yt = document.getElementById("yt");
+    
+    	btn.onclick = function() {
+    		modal.style.display = "block";
+    		yt.setAttribute("src","https://www.youtube.com/embed/9YffrCViTVk");
+    	}
+    	span.onclick = function() {
+    		modal.style.display = "none";
+    		yt.removeAttribute("src");
+    	}
+    	window.onclick = function(event) {
+    		if (event.target == modal) {
+        		modal.style.display = "none";
+         		yt.removeAttribute("src");
+    		}
+    	}
+    </script>
+    
+	{% block body %} {% endblock %}
+
+	<!-- footer -->
+	<footer class = "text-center py-5">
+		<div class = "container py-md-3">
+			<!-- logo -->
+			<h2 class = "logo2 text-center">
+				<a href = "{{ url_for('home') }}">
+					Agronomy
+				</a>
+			</h2>
+			<!-- //logo -->
+			<!-- address -->
+			<div class = "contact-left-footer mt-4">
+				</p>
+			</div>
+			<div class = "w3l-copy text-center">
+				<p class = "text-da">An Environmental Intelligence Startup<br></p>
+			</div>
+			<p class = "homelogo">
+			<p>Made by Shashank, Soumyadeep, Sukrita, Arya, Kavya</p>
+		</div>
+	</footer>
+	<!-- //footer -->
+
+	<!-- move top icon -->
+	<button onclick="topFunction()" class = "move-top text-center" id="myBtn" title="Go to top"></button>
+	<script>
+	function topFunction() {
+		document.documentElement.scrollTop = 0;
+	  }
+	</script>
+	<!-- //move top icon -->
+</body>
+</html>
